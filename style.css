@@ -13,8 +13,8 @@ body {
 }
 
 .header {
-    height: 50vh;
-    background-color: aqua;
+    /* height: 50vh; */
+    /* background-color: aqua; */
     display: flex;
 }
 
@@ -23,9 +23,32 @@ body {
     position: relative;
 }
 
+.info {
+    margin: 1em;
+    padding: 1.2em;
+}
 
+.info > p {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.nav {
+    margin: 10px;
+    margin-right: 5.2em;
+}
 
+.nav > ul {
+    display: flex;
+    gap: 0.5em;
+    justify-content: end;
+    align-items: end;
+}
 
+.small-icon:hover {
+    transform: scale(1.2);
+    transition: all 1.2s ease-in-out;
+    cursor: pointer;
+}
 
 
 
@@ -45,9 +68,19 @@ body {
 }
 .text {
     position: absolute;
-    bottom: 10px;
-    left: 100px;
+    bottom: 0.6em;
+    left: 4.5em;
     padding: 5px;
     color: white;
     font-size: 24px;
+}
+
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+    .nav {
+        margin-right: 0em;
+    }
 }
